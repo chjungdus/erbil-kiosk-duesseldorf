@@ -11,7 +11,7 @@
   <meta property="og:title" content="Erbil Kiosk – Düsseldorf-Bilk">
   <meta property="og:description" content="Getränke, Snacks und Süßes an der Suitbertusstraße 2. Täglich lange geöffnet.">
   <link rel="preconnect" href="https://images.unsplash.com">
-  <link rel="stylesheet" href="style.css?v=4">
+  <link rel="stylesheet" href="style.css?v=5">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -37,8 +37,8 @@
   <header class="nav">
     <div class="nav__bar">
       <a class="logo" href="#top" aria-label="Erbil Kiosk – Startseite"><span>ERBIL</span><b>KIOSK</b></a>
-      <nav class="nav__links" aria-label="Hauptmenü"><a href="#zeiten">Zeiten</a><a href="#sortiment">Sortiment</a><a href="#warum">Warum wir</a><a href="#finden">Finden</a></nav>
-      <p class="nav__status" data-status><span class="led"></span><span data-status-short>Öffnungszeiten laden</span></p>
+      <nav class="nav__links" aria-label="Hauptmenü"><a href="#zeiten">Zeiten</a><a href="#sortiment">Sortiment</a><a href="#eindruecke">Bilder</a><a href="#finden">Finden</a></nav>
+      <p class="nav__status" data-status><span data-status-short>Öffnungszeiten laden</span></p>
       <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menü öffnen"><span></span><span></span></button>
     </div>
     <div class="drawer" id="menu"><a href="#zeiten">Zeiten</a><a href="#sortiment">Sortiment</a><a href="#warum">Warum wir</a><a href="#fragen">Kurz gefragt</a><a href="#finden">Finden</a></div>
@@ -56,7 +56,7 @@
           <a class="btn btn--yellow" href="#zeiten">Wann habt ihr auf?</a>
           <a class="btn btn--ghost" href="https://maps.google.com/maps?cid=1806438506804261972" target="_blank" rel="noopener">Route</a>
         </div>
-        <div class="live" data-status><span class="led"></span><span data-status-text>Öffnungszeiten werden geladen</span></div>
+        <div class="live" data-status><span data-status-text>Öffnungszeiten werden geladen</span></div>
       </div>
       <div class="sticker" aria-label="4,8 Sterne bei Google, 30 Bewertungen"><b>4,8</b><span>bei Google<br>30 Bewertungen</span></div>
     </section>
@@ -79,6 +79,29 @@
 <li data-day="0"><span class="day">So</span><span class="dayfull">Sonntag</span><b>9 – 22</b></li>
         </ul>
         <p class="times__note">Eingang barrierefrei (rollstuhlgeeignet).</p>
+      </div>
+    </section>
+
+    <section class="day" id="tag" aria-labelledby="day-h">
+      <div class="wrap">
+        <h2 id="day-h">Von früh bis spät</h2>
+        <div class="day__grid">
+          <div>
+            <p class="day__time">ab 7:30</p>
+            <h3>Früh</h3>
+            <p>Montags bis freitags machen wir um 7:30 Uhr auf, am Wochenende um 9 Uhr. Für alles, was zum Start in den Tag noch fehlt.</p>
+          </div>
+          <div>
+            <p class="day__time">dazwischen</p>
+            <h3>Zwischendurch</h3>
+            <p>Ein kaltes Getränk auf dem Heimweg, ein Snack für die Pause oder etwas Süßes. Rein, raus, weiter.</p>
+          </div>
+          <div>
+            <p class="day__time">bis 22 / 23</p>
+            <h3>Spät</h3>
+            <p>Abends sind wir bis 22 Uhr da, freitags und samstags sogar bis 23 Uhr. Auch sonntags bis 22 Uhr.</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -106,14 +129,39 @@
       </div>
     </section>
 
+    <section class="shots" id="eindruecke" aria-labelledby="shots-h">
+      <div class="wrap">
+        <h2 id="shots-h">Ein Blick ins Regal</h2>
+        <p class="shots__lead">Platzhalterfotos. Hier kommen die echten Bilder aus dem Laden hin.</p>
+        <ul class="shots__grid">
+          <li><img src="https://images.unsplash.com/photo-1620663858647-89b695e62d45?auto=format&fit=crop&w=700&h=560&q=70" alt="Verschiedene Chipssorten" loading="lazy" width="700" height="560"></li>
+          <li><img src="https://images.unsplash.com/photo-1632687380457-05a1271e873b?auto=format&fit=crop&w=700&h=560&q=70" alt="Bunte Süßigkeiten" loading="lazy" width="700" height="560"></li>
+          <li><img src="https://images.unsplash.com/photo-1735599302895-b9dc6db92c1f?auto=format&fit=crop&w=700&h=560&q=70" alt="Beleuchteter Kiosk am Abend" loading="lazy" width="700" height="560"></li>
+          <li><img src="https://images.unsplash.com/photo-1674176508097-463b009c6004?auto=format&fit=crop&w=700&h=560&q=70" alt="Getränkedosen in Eis" loading="lazy" width="700" height="560"></li>
+          <li><img src="https://images.unsplash.com/photo-1666274694243-9997eb427237?auto=format&fit=crop&w=700&h=560&q=70" alt="Weiche Fruchtgummis in Pastellfarben" loading="lazy" width="700" height="560"></li>
+          <li><img src="https://images.unsplash.com/photo-1752711807643-79af3096f1b9?auto=format&fit=crop&w=700&h=560&q=70" alt="Regal mit Snacks" loading="lazy" width="700" height="560"></li>
+        </ul>
+      </div>
+    </section>
+
     <section class="why" id="warum" aria-labelledby="why-h">
       <div class="wrap">
         <h2 id="why-h">Darum Erbil</h2>
         <ol class="why__list">
           <li><div><h3>Lange offen</h3><p>Unter der Woche ab 7:30 Uhr bis abends um 22 Uhr, freitags bis 23 Uhr, samstags ab 9 bis 23 Uhr, sonntags ab 9 bis 22 Uhr.</p></div></li>
           <li><div><h3>Mitten in Bilk</h3><p>An der Suitbertusstraße 2, auf dem Weg zwischen Arbeit, Uni und Zuhause.</p></div></li>
-          <li><div><h3>Gut angekommen</h3><p>4,8 von 5 Sternen bei Google, aus 30 Bewertungen. Lies selbst nach, was Gäste schreiben.</p><a class="link" href="https://maps.google.com/maps?cid=1806438506804261972" target="_blank" rel="noopener">Bewertungen bei Google</a></div></li>
         </ol>
+      </div>
+    </section>
+
+    <section class="rate" aria-labelledby="rate-h">
+      <div class="wrap rate__grid">
+        <p class="rate__num" aria-hidden="true">4,8</p>
+        <div>
+          <h2 id="rate-h">4,8 von 5 Sternen bei Google</h2>
+          <p>30 Gäste haben den Kiosk bei Google bewertet. Lies selbst nach, was sie schreiben, und hinterlass gern selbst eine Bewertung.</p>
+          <a class="btn btn--yellow" href="https://maps.google.com/maps?cid=1806438506804261972" target="_blank" rel="noopener">Bewertungen ansehen</a>
+        </div>
       </div>
     </section>
 
@@ -123,7 +171,10 @@
         <div class="faq__items">
           <div><h3>Wo seid ihr?</h3><p>Suitbertusstraße 2, 40223 Düsseldorf, im Stadtteil Bilk.</p></div>
           <div><h3>Habt ihr sonntags auf?</h3><p>Ja, sonntags von 9 bis 22 Uhr.</p></div>
+          <div><h3>Wie lange habt ihr abends auf?</h3><p>Montag bis Donnerstag und sonntags bis 22 Uhr, freitags und samstags bis 23 Uhr.</p></div>
+          <div><h3>Wann macht ihr morgens auf?</h3><p>Montags bis freitags um 7:30 Uhr, samstags und sonntags um 9 Uhr.</p></div>
           <div><h3>Kommt man mit Rollstuhl rein?</h3><p>Ja, der Eingang ist für Rollstuhlfahrer geeignet.</p></div>
+          <div><h3>Was gibt es bei euch?</h3><p>Getränke, Snacks, Süßes und Alltägliches. Das Sortiment ändert sich, frag im Zweifel vor Ort nach.</p></div>
         </div>
       </div>
     </section>
