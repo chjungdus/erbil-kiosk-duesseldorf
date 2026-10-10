@@ -214,7 +214,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .rate__grid { display: grid; grid-template-columns: auto 1fr; gap: clamp(28px, 6vw, 90px); align-items: center; }
 .rate__num { font: 900 clamp(6rem, 18vw, 13rem)/.85 var(--head); color: var(--yellow); margin: 0; }
 .rate h2 { font-size: clamp(1.8rem, 3.6vw, 2.8rem); margin-bottom: 14px; }
-.rate p { max-width: 34em; color: #dedbd1; }
+.rate div p { max-width: 34em; color: #dedbd1; }
 
 @media (max-width: 900px) {
   .day__grid { grid-template-columns: 1fr; }
