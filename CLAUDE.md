@@ -11,12 +11,12 @@ Eigenständiges Projekt. Ein Claude-Code-Chat pro Website: In diesem Chat geht e
 - Eingang laut Google barrierefrei (rollstuhlgeeignet)
 - Sortiment ist unbekannt und bewusst nur allgemein beschrieben (Getränke, Snacks und Süßes, Alltägliches). Mit dem Inhaber abstimmen und konkretisieren. Nichts erfinden, besonders keine Aussagen zu Tabak, Alkohol, Paketservice oder Ähnlichem ohne Bestätigung.
 
-## Stil
+## Stil (Redesign Oktober 2026)
 
-Vorlage ist frittenliebe-bilk.de (gleiche Struktur und Gefühl): sticky Navigation mit Hamburger-Menü, dunkler Hero mit Overlay, Öffnungsstatus-Pille, Markisen-Band unter dem Hero, USP-Leiste, Über-uns mit schräg gedrehtem Foto-Rahmen, Karten, Galerie mit Lightbox, Bewertungen, FAQ-Akkordeon, Kontakt mit Öffnungszeiten-Tabelle und Zwei-Klick-Karte, dunkler Footer. Jede Sektion hat ein eigenes Hintergrundmotiv (Kiosk-Icons als SVG-Muster, Papierstruktur, Punktraster).
+Street/Späti: dunkles Layout, Gelb als Signalfarbe, fette Versalien, harte Schatten, Öffnungszeiten-Board direkt nach dem Hero, Bento-Raster fürs Sortiment, mobile Aktionsleiste unten. Bewusst anders als Espresso Perfetto und frittenliebe-bilk.de.
 
-- Farben (siehe `:root` in `style.css`): Kiosk-Grün `#1d7a4d` als Akzent, tiefes Grün-Schwarz `#14261c` als Text, Sonnengelb `#f2b01e` nur als kleines Highlight, Rot `#c9361f` sparsam
-- Schriften: Fraunces (Überschriften), Inter (Fließtext), lokal über `@font-face`. Die woff2-Dateien gehören nach `assets/fonts/` (`fraunces-latin-wght-normal.woff2`, `inter-latin-wght-normal.woff2`). Solange sie fehlen, greift Georgia bzw. die Systemschrift. Keine Google-Fonts-Einbindung (DSGVO).
+- Farben und Schriften stehen oben in `style.css` (`:root`). Keine Webfonts, nur Systemschriften.
+- Mateo wollte ausdrücklich eigenständige Designs, nicht die Vorlage von frittenliebe-bilk.de kopieren.
 
 ## Regeln (human-website-design)
 
@@ -25,19 +25,12 @@ Vorlage ist frittenliebe-bilk.de (gleiche Struktur und Gefühl): sticky Navigati
 - `border-radius` auf Karten und Buttons maximal 8px (Pillen für Status und Chips ausgenommen).
 - Keine erfundenen Zahlen, Zitate oder Bewertungstexte. Nur belegte Daten (Google-Profil, Angaben des Inhabers).
 - Zentrierter Text nur in der Hero-Headline.
-- Keine Stock-Fotos. Nur echte Fotos des Ladens.
+- Fotos: Mateo hat Gratisbilder (Unsplash) als Platzhalter erlaubt. Sie werden direkt von images.unsplash.com geladen. Vor Livegang durch echte Fotos des Ladens ersetzen und Datenschutz Abschnitt 4 anpassen.
 - Neue Korrekturwünsche von Mateo, die generell gelten, als kurze Lehre in `/mnt/skills/plugins/human-website-design/references/learnings.md` festhalten (falls Claude Code den Skill lokal hat).
 
 ## Bilder
 
-Mateo liefert die Fotos. Dateien in `assets/photos/` ablegen, genau mit diesen Namen (oder die `src` im HTML anpassen):
-
-- `hero.jpg` (Querformat, ca. 1920x1080)
-- `hero-hochformat.jpg` (4:5)
-- `ueber-uns.jpg` (4:5)
-- `galerie-1.jpg` bis `galerie-5.jpg`
-
-Fotos vorher auf ca. 1600px Kantenlänge und unter 400 KB komprimieren. Fehlt eine Datei, zeigt die Seite automatisch das Kiosk-Muster (Logik in `script.js`).
+Platzhalter von Unsplash, direkt per URL in `index.html` eingebunden. Echte Fotos in `assets/photos/` ablegen und die `src`-Adressen austauschen.
 
 ## Offene Punkte
 
