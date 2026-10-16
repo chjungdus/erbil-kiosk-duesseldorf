@@ -222,3 +222,34 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   .rate__grid { grid-template-columns: 1fr; }
   .why__list li { grid-template-columns: 1fr; gap: 8px; }
 }
+
+/* Großer Satz */
+.statement { background: var(--black); padding: clamp(72px, 11vw, 150px) 0 0; }
+.statement p { font: 800 clamp(1.7rem, 4vw, 3rem)/1.25 var(--body); max-width: 26em; margin: 0; }
+
+/* Türschild Öffnungszeiten */
+.plate { background: var(--paper); color: #000; max-width: 560px; border-radius: 8px; padding: 34px clamp(22px, 5vw, 44px) 26px; position: relative; box-shadow: 0 0 0 6px #000, 0 0 0 9px var(--paper); margin: 12px 9px 0; }
+.plate::before, .plate::after { content: ""; position: absolute; top: 12px; width: 9px; height: 9px; border-radius: 50%; background: #9a978e; box-shadow: inset 0 0 0 2px #6d6a62; }
+.plate::before { left: 12px; }
+.plate::after { right: 12px; }
+.plate__title { font: 900 1.6rem var(--head); text-transform: uppercase; margin: 0 0 14px; padding-bottom: 12px; border-bottom: 3px solid #000; }
+.plate__table { width: 100%; border-collapse: collapse; font-size: 1.15rem; }
+.plate__table th, .plate__table td { padding: 10px 8px; text-align: left; border-bottom: 1px solid rgba(0, 0, 0, .18); }
+.plate__table th { font-weight: 700; }
+.plate__table td { text-align: right; font-variant-numeric: tabular-nums; font-weight: 800; }
+.plate__table tr.is-today { background: var(--yellow); }
+.plate__foot { margin: 16px 0 0; font-size: .95rem; }
+
+/* Regal als Liste */
+.shelf { border-top: 3px solid var(--paper); }
+.shelf li { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.4fr) 160px; gap: 24px; align-items: center; padding: 22px 0; border-bottom: 3px solid var(--paper); }
+.shelf h3 { font-size: clamp(2.2rem, 6vw, 4.4rem); }
+.shelf p { margin: 0; color: #dedbd1; font-size: 1.1rem; }
+.shelf img, .shelf__empty { width: 160px; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 6px; }
+.shelf__empty { background: var(--red); }
+@media (max-width: 700px) {
+  .shelf li { grid-template-columns: 1fr 96px; gap: 8px 16px; }
+  .shelf h3 { grid-column: 1; }
+  .shelf p { grid-column: 1; grid-row: 2; }
+  .shelf img, .shelf__empty { grid-column: 2; grid-row: 1 / 3; width: 96px; }
+}
