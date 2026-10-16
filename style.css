@@ -273,3 +273,18 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .why__list li { border-top-width: 1px; }
 .dock { border-top-width: 2px; }
 .dock a + a { border-left-width: 2px; }
+
+/* ===== Pakete ===== */
+.parcel { background: var(--paper); color: #000; padding: clamp(72px, 10vw, 130px) 0; }
+.parcel__grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: clamp(32px, 6vw, 90px); align-items: start; }
+.parcel h2 { font-size: clamp(2.4rem, 6vw, 4.6rem); margin-bottom: 20px; }
+.parcel__intro p { max-width: 32em; margin-bottom: 28px; }
+.parcel__intro img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 6px; }
+.parcel__steps { display: grid; gap: 36px; }
+.parcel h3 { font-size: 1.6rem; padding-bottom: 10px; border-bottom: 2px solid #000; margin-bottom: 14px; }
+.parcel ol { list-style: none; counter-reset: step; display: grid; gap: 14px; }
+.parcel ol li { counter-increment: step; display: grid; grid-template-columns: 2.4rem 1fr; align-items: baseline; }
+.parcel ol li::before { content: counter(step); font: 900 1.6rem/1 var(--head); }
+.parcel__note { margin: 0; padding: 14px 18px; background: var(--yellow); border-radius: 4px; font-weight: 600; }
+.parcel :focus-visible { outline-color: #000; }
+@media (max-width: 900px) { .parcel__grid { grid-template-columns: 1fr; } }

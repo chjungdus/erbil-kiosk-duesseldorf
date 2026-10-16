@@ -11,7 +11,7 @@
   <meta property="og:title" content="Erbil Kiosk – Düsseldorf-Bilk">
   <meta property="og:description" content="Getränke, Snacks und Süßes an der Suitbertusstraße 2. Täglich lange geöffnet.">
   <link rel="preconnect" href="https://images.unsplash.com">
-  <link rel="stylesheet" href="style.css?v=9">
+  <link rel="stylesheet" href="style.css?v=10">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -31,17 +31,16 @@
 </head>
 <body id="top">
   <a class="skip" href="#main">Zum Inhalt springen</a>
-  <!-- PROBE-HINWEIS: Leiste und Footer-Hinweis entfernen, sobald der Kunde die Seite übernimmt -->
-  <div class="probe">Entwurf von Nexuzo, unverbindliche Probewebsite für Erbil Kiosk</div>
+  <!-- PROBE-HINWEIS: Die Leiste oben wurde auf Wunsch entfernt. Der Hinweis im Footer bleibt, bis der Kunde die Seite übernimmt. -->
 
   <header class="nav">
     <div class="nav__bar">
       <a class="logo" href="#top" aria-label="Erbil Kiosk – Startseite"><span>ERBIL</span><b>KIOSK</b></a>
-      <nav class="nav__links" aria-label="Hauptmenü"><a href="#zeiten">Zeiten</a><a href="#sortiment">Sortiment</a><a href="#eindruecke">Bilder</a><a href="#finden">Finden</a></nav>
+      <nav class="nav__links" aria-label="Hauptmenü"><a href="#zeiten">Zeiten</a><a href="#sortiment">Sortiment</a><a href="#pakete">Pakete</a><a href="#finden">Finden</a></nav>
       <p class="nav__status" data-status><span data-status-short>Öffnungszeiten laden</span></p>
       <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menü öffnen"><span></span><span></span></button>
     </div>
-    <div class="drawer" id="menu"><a href="#zeiten">Zeiten</a><a href="#sortiment">Sortiment</a><a href="#warum">Warum wir</a><a href="#fragen">Kurz gefragt</a><a href="#finden">Finden</a></div>
+    <div class="drawer" id="menu"><a href="#zeiten">Zeiten</a><a href="#sortiment">Sortiment</a><a href="#pakete">Pakete</a><a href="#warum">Warum wir</a><a href="#fragen">Kurz gefragt</a><a href="#finden">Finden</a></div>
   </header>
 
   <main id="main">
@@ -128,6 +127,36 @@
       </div>
     </section>
 
+    <section class="parcel" id="pakete" aria-labelledby="parcel-h">
+      <!-- PAKETE PRÜFEN: Paketannahme ist eine Annahme für die Probewebsite. Mit dem Inhaber klären, ob und für welchen Dienst (DHL, Hermes, DPD, GLS, UPS ...). Anbieter erst nach Bestätigung nennen. -->
+      <div class="wrap parcel__grid">
+        <div class="parcel__intro">
+          <h2 id="parcel-h">Pakete abgeben und abholen</h2>
+          <p>Nicht zu Hause gewesen, als der Bote kam? Oder muss eine Retoure zurück? Bring dein Paket einfach während der Öffnungszeiten vorbei, auch abends und am Wochenende.</p>
+          <img src="https://images.unsplash.com/photo-1577705998148-6da4f3963bc8?auto=format&fit=crop&w=900&h=600&q=70" alt="Verpacktes Paket auf einem Tisch (Platzhalterfoto)" loading="lazy" width="900" height="600">
+        </div>
+        <div class="parcel__steps">
+          <div>
+            <h3>Abgeben</h3>
+            <ol>
+              <li>Paket gut verpacken und das Versandlabel aufkleben.</li>
+              <li>Vorbeibringen, bei Retouren den QR-Code auf dem Handy zeigen.</li>
+              <li>Einlieferungsbeleg mitnehmen und gut aufheben.</li>
+            </ol>
+          </div>
+          <div>
+            <h3>Abholen</h3>
+            <ol>
+              <li>Benachrichtigung oder Abholcode bereithalten.</li>
+              <li>Ausweis mitbringen. Für andere abholen geht meist mit Vollmacht.</li>
+              <li>Paket an der Kasse mitnehmen.</li>
+            </ol>
+          </div>
+          <p class="parcel__note">Welche Paketdienste hier angenommen werden, erfährst du direkt im Laden.</p>
+        </div>
+      </div>
+    </section>
+
     <section class="shots" id="eindruecke" aria-labelledby="shots-h">
       <div class="wrap">
         <h2 id="shots-h">Ein Blick ins Regal</h2>
@@ -173,6 +202,8 @@
           <div><h3>Wie lange habt ihr abends auf?</h3><p>Montag bis Donnerstag und sonntags bis 22 Uhr, freitags und samstags bis 23 Uhr.</p></div>
           <div><h3>Wann macht ihr morgens auf?</h3><p>Montags bis freitags um 7:30 Uhr, samstags und sonntags um 9 Uhr.</p></div>
           <div><h3>Kommt man mit Rollstuhl rein?</h3><p>Ja, der Eingang ist für Rollstuhlfahrer geeignet.</p></div>
+          <div><h3>Kann ich bei euch Pakete abgeben?</h3><p>Ja, während der Öffnungszeiten. Welche Paketdienste genau, sagen wir dir im Laden.</p></div>
+          <div><h3>Kann ich Retouren ohne Drucker abgeben?</h3><p>Bei vielen Händlern reicht ein QR-Code auf dem Handy. Zeig ihn einfach an der Kasse.</p></div>
           <div><h3>Was gibt es bei euch?</h3><p>Getränke, Snacks, Süßes und Alltägliches. Das Sortiment ändert sich, frag im Zweifel vor Ort nach.</p></div>
         </div>
       </div>
