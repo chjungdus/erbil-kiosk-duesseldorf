@@ -253,3 +253,23 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   .shelf p { grid-column: 1; grid-row: 2; }
   .shelf img, .shelf__empty { grid-column: 2; grid-row: 1 / 3; width: 96px; }
 }
+
+/* ===== Etwas ruhiger (Wunsch von Mateo, 16.10.2026) =====
+   Weniger harte Schatten, dünnere Linien, kein Punktraster, kein Sticker im Hero. */
+.btn, .btn--ghost, .btn--black { box-shadow: none; border-width: 2px; }
+.btn:hover, .btn--ghost:hover { transform: none; box-shadow: none; opacity: .88; }
+.map { box-shadow: none; border-width: 2px; }
+.times { background-image: none; }
+.ribbon { border-block-width: 2px; }
+.ribbon span { font-size: 1.05rem; padding: 9px 0; }
+.ribbon__track { animation-duration: 80s; }
+.nav { border-bottom-width: 2px; }
+.live { border-width: 1px; background: rgba(0, 0, 0, .45); }
+.shots__grid img { border: 0; }
+.shelf, .shelf li { border-width: 1px; border-color: rgba(246, 243, 234, .35); }
+.day__grid > div { border-top-width: 2px; }
+.plate { box-shadow: 0 0 0 4px #000, 0 0 0 6px var(--paper); }
+.plate__title { border-bottom-width: 2px; }
+.why__list li { border-top-width: 1px; }
+.dock { border-top-width: 2px; }
+.dock a + a { border-left-width: 2px; }
