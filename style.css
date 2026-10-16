@@ -246,10 +246,10 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .shelf h3 { font-size: clamp(2.2rem, 6vw, 4.4rem); }
 .shelf p { margin: 0; color: #dedbd1; font-size: 1.1rem; }
 .shelf img, .shelf__empty { width: 160px; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 6px; }
-.shelf__empty { background: var(--red); }
+.shelf li:not(:has(img)) h3, .shelf li:not(:has(img)) p { grid-column: 1 / -1; }
 @media (max-width: 700px) {
   .shelf li { grid-template-columns: 1fr 96px; gap: 8px 16px; }
-  .shelf h3 { grid-column: 1; }
+  .shelf h3 { grid-column: 1; font-size: 2rem; }
   .shelf p { grid-column: 1; grid-row: 2; }
   .shelf img, .shelf__empty { grid-column: 2; grid-row: 1 / 3; width: 96px; }
 }
