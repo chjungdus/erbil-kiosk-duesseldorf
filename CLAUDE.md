@@ -11,13 +11,13 @@ Eigenständiges Projekt. Ein Claude-Code-Chat pro Website: In diesem Chat geht e
 - Eingang laut Google barrierefrei (rollstuhlgeeignet)
 - Sortiment ist unbekannt und bewusst nur allgemein beschrieben (Getränke, Snacks und Süßes, Alltägliches). Mit dem Inhaber abstimmen und konkretisieren. Nichts erfinden, besonders keine Aussagen zu Tabak, Alkohol, Paketservice oder Ähnlichem ohne Bestätigung.
 
-## Stil (Redesign November 2026)
+## Stil (Redesign November 2026, zweite Fassung)
 
-Schlichter Onepager in Rot und Weiß: oben Logo, Öffnungsstatus und eine Reihe Buttons (Sprungmarken), darunter alle Infos ohne Menü, Tabs oder Aufklapper. Öffnungszeiten stehen direkt im Hero neben der Headline. Fotos als Hintergrund im Hero und im Band „Pakete/Bewertung". Abgerundete Ecken (8px), weiche Schatten, Systemschrift ohne Versalien. Mobile Aktionsleiste unten. Bewusst anders als Espresso Perfetto und frittenliebe-bilk.de.
+Ruhig und fotolastig, aufgebaut wie ein Profil: links (Handy: oben) Name, Öffnungsstatus, Kennzahlen von Google, kurzer Text, Buttons (Route, Zeiten, Fotos, Karte) und die Öffnungszeiten. Rechts (Handy: darunter) große Fotos untereinander, dazwischen kurze Textblöcke. Auf dem Desktop bleibt die Profilspalte stehen. Warmes Weiß, Rot nur als Akzent (Name, Route-Button, heutiger Tag), keine Karten mit Schatten, keine Infoleisten, keine Icons. Bewusst anders als Espresso Perfetto und frittenliebe-bilk.de.
 
 - Farben und Schriften stehen oben in `style.css` (`:root`). Keine Webfonts, nur Systemschriften.
 - Mateo wollte ausdrücklich eigenständige Designs, nicht die Vorlage von frittenliebe-bilk.de kopieren.
-- Vorheriger Street/Späti-Stil (dunkel, Gelb, eckig) war Mateo zu „komisch eckig"; nicht wieder einführen.
+- Nicht wieder einführen: Street/Späti-Stil (dunkel, Gelb, eckig) und die erste rot-weiße Fassung (Hero mit Karte, rote Infoleiste, Kästen mit Schatten). Beide fand Mateo schlecht, die zweite „sieht nach Vorlage aus".
 
 ## Regeln (human-website-design)
 
