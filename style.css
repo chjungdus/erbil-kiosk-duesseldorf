@@ -188,6 +188,13 @@ details p { padding: 0 18px 18px; color: var(--muted); }
   .facts li { grid-template-columns: 1fr; gap: 2px; }
   .brand { font-size: 1.15rem; }
 }
+.h2 { overflow-wrap: break-word; hyphens: auto; }
+@media (max-width: 560px) { .h2 { font-size: clamp(1.7rem, 8.2vw, 2.2rem); } }
+/* Grid-Spalten dürfen schrumpfen, damit auf dem Handy nichts über den Rand ragt */
+.hero__in > *, .where__in > *, .foot__in > *, .cards > *, .tiles__grid > *, .gallery > * { min-width: 0; }
+@media (max-width: 1000px) { .where__in { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 860px) { .hero__in, .foot__in { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 560px) { .cards, .tiles__grid, .gallery { grid-template-columns: minmax(0, 1fr); } }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .ticker__track { animation: none; }
