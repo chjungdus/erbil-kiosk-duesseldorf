@@ -11,13 +11,13 @@ Eigenständiges Projekt. Ein Claude-Code-Chat pro Website: In diesem Chat geht e
 - Eingang laut Google barrierefrei (rollstuhlgeeignet)
 - Sortiment ist unbekannt und bewusst nur allgemein beschrieben (Getränke, Snacks und Süßes, Alltägliches). Mit dem Inhaber abstimmen und konkretisieren. Nichts erfinden, besonders keine Aussagen zu Tabak, Alkohol, Paketservice oder Ähnlichem ohne Bestätigung.
 
-## Stil (Redesign November 2026, zweite Fassung)
+## Stil (Redesign 13.11.2026, dritte Fassung)
 
-Ruhig und fotolastig, aufgebaut wie ein Profil: links (Handy: oben) Name, Öffnungsstatus, Kennzahlen von Google, kurzer Text, Buttons (Route, Zeiten, Fotos, Karte) und die Öffnungszeiten. Rechts (Handy: darunter) große Fotos untereinander, dazwischen kurze Textblöcke. Auf dem Desktop bleibt die Profilspalte stehen. Warmes Weiß, Rot nur als Akzent (Name, Route-Button, heutiger Tag), keine Karten mit Schatten, keine Infoleisten, keine Icons. Bewusst anders als Espresso Perfetto und frittenliebe-bilk.de.
+Mateo fand die ruhige Profil-Fassung schlecht und wollte ausdrücklich, dass sich der Aufbau an guten Kiosk-/Späti-Seiten orientiert (Vorbild: checkpointali.de, Aufbau und Stilmittel, nichts von deren Code, Texten oder Fotos). Aufbau: Laufband mit Zeiten, sticky Kopf mit Navigation und Route-Button, Hero mit Eyebrow-Badge, großer Headline, Faktenliste, zwei Buttons und großem Foto, Kachelraster (nur belegte Fakten), nummerierte Sortiment-Karten mit Foto, dunkle Galerie „Der Laden", Standort mit Öffnungszeiten und Zwei-Klick-Karte, Bewertungsband, FAQ-Akkordeon, dunkler Fuß. Kräftig und hell: Creme, Rot, Gold, Grün, dicke Konturen, harte Schatten, Display-Schrift (Arial Black).
 
 - Farben und Schriften stehen oben in `style.css` (`:root`). Keine Webfonts, nur Systemschriften.
-- Mateo wollte ausdrücklich eigenständige Designs, nicht die Vorlage von frittenliebe-bilk.de kopieren.
-- Nicht wieder einführen: Street/Späti-Stil (dunkel, Gelb, eckig) und die erste rot-weiße Fassung (Hero mit Karte, rote Infoleiste, Kästen mit Schatten). Beide fand Mateo schlecht, die zweite „sieht nach Vorlage aus".
+- Logo: `assets/logo.svg` (voll) und `assets/mark.svg` (Zeichen, auch Favicon). Sonne mit 21 Strahlen über Kiosk-Vordach. Erzeugt von `C:\Users\mateo\erbil-tools\gen-logo.mjs`.
+- Früher verworfen: Street/Späti-Stil (dunkel, Gelb, eckig), die erste rot-weiße Fassung und die ruhige Profil-Fassung.
 
 ## Regeln (human-website-design)
 
