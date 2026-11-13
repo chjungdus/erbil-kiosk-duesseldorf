@@ -11,12 +11,13 @@ Eigenständiges Projekt. Ein Claude-Code-Chat pro Website: In diesem Chat geht e
 - Eingang laut Google barrierefrei (rollstuhlgeeignet)
 - Sortiment ist unbekannt und bewusst nur allgemein beschrieben (Getränke, Snacks und Süßes, Alltägliches). Mit dem Inhaber abstimmen und konkretisieren. Nichts erfinden, besonders keine Aussagen zu Tabak, Alkohol, Paketservice oder Ähnlichem ohne Bestätigung.
 
-## Stil (Redesign Oktober 2026)
+## Stil (Redesign November 2026)
 
-Street/Späti: dunkles Layout, Gelb als Signalfarbe, fette Versalien, harte Schatten, Öffnungszeiten-Board direkt nach dem Hero, Bento-Raster fürs Sortiment, mobile Aktionsleiste unten. Bewusst anders als Espresso Perfetto und frittenliebe-bilk.de.
+Schlichter Onepager in Rot und Weiß: oben Logo, Öffnungsstatus und eine Reihe Buttons (Sprungmarken), darunter alle Infos ohne Menü, Tabs oder Aufklapper. Öffnungszeiten stehen direkt im Hero neben der Headline. Fotos als Hintergrund im Hero und im Band „Pakete/Bewertung". Abgerundete Ecken (8px), weiche Schatten, Systemschrift ohne Versalien. Mobile Aktionsleiste unten. Bewusst anders als Espresso Perfetto und frittenliebe-bilk.de.
 
 - Farben und Schriften stehen oben in `style.css` (`:root`). Keine Webfonts, nur Systemschriften.
 - Mateo wollte ausdrücklich eigenständige Designs, nicht die Vorlage von frittenliebe-bilk.de kopieren.
+- Vorheriger Street/Späti-Stil (dunkel, Gelb, eckig) war Mateo zu „komisch eckig"; nicht wieder einführen.
 
 ## Regeln (human-website-design)
 
@@ -38,7 +39,8 @@ Platzhalter von Unsplash, direkt per URL in `index.html` eingebunden. Echte Foto
 - Sortiment konkretisieren (HTML-Kommentar „SORTIMENT PRÜFEN" in `index.html`)
 - Echte Geschichte des Inhabers im Über-uns-Text ergänzen (HTML-Kommentar „HINWEIS an Mateo")
 - Impressum und Datenschutz: Platzhalter (gelb markiert) ausfüllen, rechtlich prüfen lassen
-- Probe-Leiste und Footer-Hinweis entfernen, sobald der Kunde die Seite übernimmt (HTML-Kommentare „PROBE-HINWEIS")
+- Footer-Hinweis entfernen, sobald der Kunde die Seite übernimmt (HTML-Kommentar „PROBE-HINWEIS")
+- Paketannahme mit dem Inhaber bestätigen (HTML-Kommentar „PAKETE PRÜFEN")
 
 ## Veröffentlichen (Nexuzo-Workflow)
 
@@ -51,6 +53,6 @@ index.html      Startseite (alle Sektionen)
 impressum.html  Platzhalter-Vorlage
 datenschutz.html  Vorlage für statische Seite ohne Tracking
 style.css       komplettes Styling inkl. Tokens und Hintergrundmotiven
-script.js       Menü, Öffnungsstatus (HOURS oben im Skript), FAQ, Lightbox, Karte
+script.js       Öffnungsstatus (HOURS oben im Skript), Karte nach Klick
 assets/         fonts/ und photos/
 ```
