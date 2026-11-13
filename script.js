@@ -14,17 +14,6 @@
   function toMin(t) { var a = t.split(':'); return parseInt(a[0], 10) * 60 + parseInt(a[1], 10); }
   function fmt(t) { var a = t.split(':'); return parseInt(a[0], 10) + (a[1] === '00' ? '' : ':' + a[1]); }
 
-  /* Navigation */
-  var toggle = $('.nav__toggle'), menu = $('#menu');
-  if (toggle && menu) {
-    toggle.addEventListener('click', function () {
-      var open = toggle.getAttribute('aria-expanded') === 'true';
-      toggle.setAttribute('aria-expanded', String(!open));
-      menu.classList.toggle('is-open', !open);
-    });
-    $$('a', menu).forEach(function (a) { a.addEventListener('click', function () { toggle.setAttribute('aria-expanded', 'false'); menu.classList.remove('is-open'); }); });
-  }
-
   /* Öffnungsstatus */
   function status() {
     var now = berlinNow(), t = HOURS[now.day], open = false, text = '', next = '';
@@ -36,25 +25,6 @@
     $$('[data-day]').forEach(function (r) { var t = parseInt(r.getAttribute('data-day'), 10) === now.day; r.classList.toggle('is-today', t); if (t) r.setAttribute('aria-current', 'date'); else r.removeAttribute('aria-current'); });
   }
   status(); setInterval(status, 60000);
-
-  /* Reveal */
-  var items = $$('.reveal');
-  if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, { threshold: 0.12 });
-    items.forEach(function (el) { io.observe(el); });
-  } else { items.forEach(function (el) { el.classList.add('in'); }); }
-
-  /* Lightbox */
-  var lb = $('.lightbox');
-  if (lb) {
-    var lbImg = $('img', lb), last = null;
-    $$('[data-zoom]').forEach(function (b) {
-      b.addEventListener('click', function () { last = b; var im = $('img', b); lbImg.src = im.getAttribute('data-full') || im.src; lbImg.alt = im.alt; lb.hidden = false; $('.lightbox__close', lb).focus(); });
-    });
-    function close() { lb.hidden = true; lbImg.src = ''; if (last) last.focus(); }
-    lb.addEventListener('click', function (e) { if (e.target === lb || e.target.closest('.lightbox__close')) close(); });
-    document.addEventListener('keydown', function (e) { if (lb.hidden) return; if (e.key === 'Escape') close(); if (e.key === 'Tab') { e.preventDefault(); $('.lightbox__close', lb).focus(); } });
-  }
 
   /* Karte erst nach Klick (Zwei-Klick-Lösung, DSGVO) */
   var mapBtn = $('[data-load-map]');
