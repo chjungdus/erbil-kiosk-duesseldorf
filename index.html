@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Erbil Kiosk – dein Büdchen in Düsseldorf-Bilk</title>
   <meta name="description" content="Erbil Kiosk an der Suitbertusstraße 2 in Düsseldorf-Bilk: kalte Getränke, Snacks, Süßes und Alltägliches. Jeden Tag geöffnet, bis 22 Uhr, Fr und Sa bis 23 Uhr.">
-  <meta name="theme-color" content="#d7261e">
+  <meta name="theme-color" content="#17140f">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="de_DE">
   <meta property="og:title" content="Erbil Kiosk – Düsseldorf-Bilk">
   <meta property="og:description" content="Kalte Getränke, Snacks und Süßes an der Suitbertusstraße 2. Jeden Tag geöffnet.">
   <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://images.unsplash.com">
-  <link rel="stylesheet" href="style.css?v=40">
+  <link rel="stylesheet" href="style.css?v=41">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -33,93 +33,73 @@
 <body>
   <a class="skip" href="#start">Zum Inhalt springen</a>
 
-  <!-- Laufband -->
-  <div class="ticker" aria-hidden="true">
-    <div class="ticker__track">
-      <span>Mo–Do 7:30–22 Uhr</span><span>Fr 7:30–23 Uhr</span><span>Sa 9–23 Uhr</span><span>So 9–22 Uhr</span><span>Suitbertusstraße 2, Düsseldorf-Bilk</span><span>Kalt, griffbereit, jeden Tag</span>
-      <span>Mo–Do 7:30–22 Uhr</span><span>Fr 7:30–23 Uhr</span><span>Sa 9–23 Uhr</span><span>So 9–22 Uhr</span><span>Suitbertusstraße 2, Düsseldorf-Bilk</span><span>Kalt, griffbereit, jeden Tag</span>
-    </div>
-  </div>
-
   <header class="top">
     <div class="wrap top__in">
       <a class="brand" href="#start" aria-label="Erbil Kiosk, zur Startseite">
-        <img src="assets/mark.svg" alt="" width="44" height="44">
-        <span>Erbil <b>Kiosk</b></span>
+        <img src="assets/mark.svg" alt="" width="36" height="36">
+        <span>Erbil Kiosk</span>
       </a>
       <nav class="nav" aria-label="Hauptmenü">
-        <a href="#start">Start</a>
         <a href="#sortiment">Sortiment</a>
         <a href="#laden">Der Laden</a>
         <a href="#standort">Standort</a>
         <a href="#fragen">Fragen</a>
       </nav>
-      <a class="btn btn--red top__cta" href="https://maps.google.com/maps?cid=1806438506804261972" target="_blank" rel="noopener">Route planen</a>
+      <a class="btn btn--dark top__cta" href="https://maps.google.com/maps?cid=1806438506804261972" target="_blank" rel="noopener">Route</a>
     </div>
   </header>
 
   <main id="start">
-    <!-- Hero -->
+    <!-- Hero: Großfoto mit dem Namen darauf -->
     <section class="hero">
+      <!-- Platzhalterfoto von Unsplash. Vor Livegang durch echtes Foto des Ladens ersetzen (assets/photos/). -->
+      <img class="hero__bg" src="https://images.unsplash.com/photo-1735599302895-b9dc6db92c1f?auto=format&fit=crop&w=2400&h=1300&q=72" alt="Kiosk am Abend (Platzhalterfoto)" width="2400" height="1300" fetchpriority="high">
+      <div class="hero__shade" aria-hidden="true"></div>
       <div class="wrap hero__in">
-        <div class="hero__text">
-          <p class="eyebrow"><img src="assets/mark.svg" alt="" width="26" height="26"> Dein Büdchen &middot; Düsseldorf-Bilk</p>
-          <h1>Erbil <span>Kiosk</span></h1>
-          <p class="hero__lead">Kalte Getränke, Snacks, Süßes und alles, was du gerade vergessen hast. Direkt an der Suitbertusstraße, sieben Tage die Woche.</p>
-          <ul class="facts">
-            <li><b>Adresse</b> Suitbertusstraße 2, 40223 Düsseldorf</li>
-            <li><b>Heute</b> <span class="status" data-status><span class="dot" aria-hidden="true"></span><span data-status-text>Öffnungszeiten siehe unten</span></span></li>
-            <li><b>Bei Google</b> 4,8 von 5 Sternen, 30 Bewertungen</li>
-            <li><b>Eingang</b> barrierefrei</li>
-          </ul>
-          <div class="hero__btns">
-            <a class="btn btn--red" href="https://maps.google.com/maps?cid=1806438506804261972" target="_blank" rel="noopener">Route planen</a>
-            <a class="btn btn--line" href="#sortiment">Zum Sortiment</a>
-          </div>
+        <p class="status status--glass" data-status><span class="dot" aria-hidden="true"></span><span data-status-text>Öffnungszeiten siehe unten</span></p>
+        <h1>Erbil Kiosk</h1>
+        <p class="hero__lead">Kalte Getränke, Snacks, Süßes und alles, was du gerade vergessen hast. Suitbertusstraße 2, Düsseldorf-Bilk.</p>
+        <div class="hero__btns">
+          <a class="btn btn--light" href="https://maps.google.com/maps?cid=1806438506804261972" target="_blank" rel="noopener">Route planen</a>
+          <a class="btn btn--ghost" href="#standort">Öffnungszeiten</a>
         </div>
-        <figure class="hero__photo">
-          <!-- Platzhalterfoto von Unsplash. Vor Livegang durch echtes Foto des Ladens ersetzen (assets/photos/). -->
-          <img src="https://images.unsplash.com/photo-1629653403057-68f915377196?auto=format&fit=crop&w=1200&h=1400&q=70" alt="Beleuchteter Kiosk am Abend (Platzhalterfoto)" width="1200" height="1400" fetchpriority="high">
-          <figcaption data-status-short>Offen</figcaption>
-        </figure>
       </div>
     </section>
 
-    <!-- Kacheln -->
-    <section class="tiles" aria-label="Das Wichtigste auf einen Blick">
-      <div class="wrap tiles__grid">
-        <article class="tile"><span class="tile__no">7</span><h2>Tage offen</h2><p>Montag bis Sonntag, auch am Wochenende.</p></article>
-        <article class="tile tile--gold"><span class="tile__no">22</span><h2>Uhr oder später</h2><p>Abends bis 22 Uhr, freitags und samstags bis 23 Uhr.</p></article>
-        <article class="tile"><span class="tile__no">7:30</span><h2>Früh dran</h2><p>Montags bis freitags ab 7:30 Uhr, am Wochenende ab 9 Uhr.</p></article>
-        <article class="tile tile--green"><span class="tile__no">4,8</span><h2>Bei Google</h2><p>30 Bewertungen, 4,8 von 5 Sternen.</p></article>
-        <article class="tile"><span class="tile__no">Offen</span><h2>Für alle</h2><p>Der Eingang ist laut Google barrierefrei.</p></article>
-        <article class="tile tile--red"><span class="tile__no">Kalt</span><h2>Und griffbereit</h2><p>Getränke aus dem Kühlregal, direkt zum Mitnehmen.</p></article>
+    <!-- Infoleiste -->
+    <section class="strip" aria-label="Das Wichtigste auf einen Blick">
+      <div class="wrap strip__in">
+        <div><span>Adresse</span><p>Suitbertusstraße 2<br>40223 Düsseldorf</p></div>
+        <div><span>Geöffnet</span><p>7 Tage die Woche<br>bis 22 Uhr, Fr und Sa bis 23 Uhr</p></div>
+        <div><span>Bei Google</span><p>4,8 von 5 Sternen<br>30 Bewertungen</p></div>
+        <div><span>Eingang</span><p>Barrierefrei<br>laut Google-Profil</p></div>
       </div>
     </section>
 
     <!-- Sortiment -->
     <section class="range" id="sortiment">
       <div class="wrap">
-        <p class="kicker">Sortiment</p>
-        <h2 class="h2">Das gibt es bei uns</h2>
-        <!-- SORTIMENT PRÜFEN: bewusst allgemein gehalten. Mit dem Inhaber abstimmen und konkretisieren; nichts ohne Bestätigung ergänzen (kein Tabak, Alkohol, Paketdienst o. Ä.). -->
-        <p class="lead">Vier Dinge, die immer gehen. Das Angebot wechselt, frag im Zweifel einfach im Laden nach.</p>
+        <div class="head">
+          <h2 class="h2">Sortiment</h2>
+          <!-- SORTIMENT PRÜFEN: bewusst allgemein gehalten. Mit dem Inhaber abstimmen und konkretisieren; nichts ohne Bestätigung ergänzen (kein Tabak, Alkohol, Paketdienst o. Ä.). -->
+          <p class="lead">Das Angebot wechselt. Wenn du etwas Bestimmtes suchst, frag einfach im Laden nach.</p>
+        </div>
         <div class="cards">
           <article class="card">
             <img src="https://images.unsplash.com/photo-1674176508097-463b009c6004?auto=format&fit=crop&w=900&h=700&q=70" alt="Getränkedosen in Eis (Platzhalterfoto)" width="900" height="700" loading="lazy">
-            <div class="card__body"><span class="card__no">01</span><h3>Getränke</h3><p>Kalt aus dem Kühlregal, zum Mitnehmen.</p></div>
+            <h3>Getränke</h3><p>Kalt aus dem Kühlregal, zum Mitnehmen.</p>
           </article>
           <article class="card">
             <img src="https://images.unsplash.com/photo-1620663858647-89b695e62d45?auto=format&fit=crop&w=900&h=700&q=70" alt="Verschiedene Chipssorten (Platzhalterfoto)" width="900" height="700" loading="lazy">
-            <div class="card__body"><span class="card__no">02</span><h3>Snacks</h3><p>Chips und Herzhaftes für zwischendurch.</p></div>
+            <h3>Snacks</h3><p>Chips und Herzhaftes für zwischendurch.</p>
           </article>
           <article class="card">
             <img src="https://images.unsplash.com/photo-1601493701002-3223e7e1ebaf?auto=format&fit=crop&w=900&h=700&q=70" alt="Bunte Süßigkeiten (Platzhalterfoto)" width="900" height="700" loading="lazy">
-            <div class="card__body"><span class="card__no">03</span><h3>Süßes</h3><p>Bonbons, Schokolade und Naschkram.</p></div>
+            <h3>Süßes</h3><p>Bonbons, Schokolade und Naschkram.</p>
           </article>
           <article class="card">
-            <img src="https://images.unsplash.com/photo-1735599302895-b9dc6db92c1f?auto=format&fit=crop&w=900&h=700&q=70" alt="Kiosk am Abend (Platzhalterfoto)" width="900" height="700" loading="lazy">
-            <div class="card__body"><span class="card__no">04</span><h3>Alltägliches</h3><p>Das, was zu Hause plötzlich fehlt.</p></div>
+            <img src="https://images.unsplash.com/photo-1629653403057-68f915377196?auto=format&fit=crop&w=900&h=700&q=70" alt="Kiosk am Abend (Platzhalterfoto)" width="900" height="700" loading="lazy">
+            <h3>Alltägliches</h3><p>Das, was zu Hause plötzlich fehlt.</p>
           </article>
         </div>
       </div>
@@ -128,10 +108,12 @@
     <!-- Der Laden -->
     <section class="shop" id="laden">
       <div class="wrap">
-        <p class="kicker kicker--light">Der Laden</p>
-        <h2 class="h2 h2--light">Mitten in Bilk</h2>
+        <div class="head">
+          <h2 class="h2">Der Laden</h2>
+          <p class="lead">Mitten in Bilk, von früh bis spät.</p>
+        </div>
         <div class="gallery">
-          <figure class="g g--big"><img src="https://images.unsplash.com/photo-1629653403057-68f915377196?auto=format&fit=crop&w=1200&h=900&q=70" alt="Kiosk am Abend (Platzhalterfoto)" width="1200" height="900" loading="lazy"><figcaption>Suitbertusstraße 2</figcaption></figure>
+          <figure class="g g--big"><img src="https://images.unsplash.com/photo-1629653403057-68f915377196?auto=format&fit=crop&w=1400&h=1000&q=70" alt="Kiosk am Abend (Platzhalterfoto)" width="1400" height="1000" loading="lazy"><figcaption>Suitbertusstraße 2</figcaption></figure>
           <figure class="g"><img src="https://images.unsplash.com/photo-1674176508097-463b009c6004?auto=format&fit=crop&w=800&h=800&q=70" alt="Kalte Getränke (Platzhalterfoto)" width="800" height="800" loading="lazy"><figcaption>Kalt und griffbereit</figcaption></figure>
           <figure class="g"><img src="https://images.unsplash.com/photo-1735599302895-b9dc6db92c1f?auto=format&fit=crop&w=800&h=800&q=70" alt="Kiosk am Abend (Platzhalterfoto)" width="800" height="800" loading="lazy"><figcaption>Auch sonntags offen</figcaption></figure>
         </div>
@@ -142,9 +124,8 @@
     <section class="where" id="standort">
       <div class="wrap where__in">
         <div>
-          <p class="kicker">So findest du uns</p>
-          <h2 class="h2">Suitbertusstraße 2</h2>
-          <p class="lead">40223 Düsseldorf, im Stadtteil Bilk. Der Eingang ist barrierefrei.</p>
+          <h2 class="h2">So findest du uns</h2>
+          <p class="lead">Suitbertusstraße 2, 40223 Düsseldorf, im Stadtteil Bilk.</p>
           <div class="hours" id="zeiten">
             <h3>Öffnungszeiten</h3>
             <table>
@@ -159,13 +140,13 @@
               </tbody>
             </table>
           </div>
-          <a class="btn btn--red" href="https://maps.google.com/maps?cid=1806438506804261972" target="_blank" rel="noopener">Route planen</a>
+          <a class="btn btn--dark" href="https://maps.google.com/maps?cid=1806438506804261972" target="_blank" rel="noopener">Route planen</a>
         </div>
         <div class="map" aria-label="Karte">
           <div class="map__consent">
             <p>Die Karte wird erst nach deinem Klick geladen. Dabei werden Daten (u. a. deine IP-Adresse) an Google übertragen, auch in die USA. Mehr dazu in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
             <div class="map__btns">
-              <button class="btn btn--red" type="button" data-load-map="Erbil Kiosk, Suitbertusstraße 2, 40223 Düsseldorf">Karte laden</button>
+              <button class="btn btn--dark" type="button" data-load-map="Erbil Kiosk, Suitbertusstraße 2, 40223 Düsseldorf">Karte laden</button>
               <a class="btn btn--line" href="https://maps.google.com/maps?cid=1806438506804261972" target="_blank" rel="noopener">In Google Maps öffnen</a>
             </div>
           </div>
@@ -173,19 +154,10 @@
       </div>
     </section>
 
-    <!-- Bewertung -->
-    <section class="rating">
-      <div class="wrap rating__in">
-        <p class="rating__big">4,8<span> / 5</span></p>
-        <p>So bewerten 30 Leute den Kiosk bei Google. <a href="https://maps.google.com/maps?cid=1806438506804261972" target="_blank" rel="noopener">Bewertungen lesen</a></p>
-      </div>
-    </section>
-
     <!-- Fragen -->
     <section class="faq" id="fragen">
       <div class="wrap faq__in">
-        <p class="kicker">Häufige Fragen</p>
-        <h2 class="h2">Kurz beantwortet</h2>
+        <h2 class="h2">Häufige Fragen</h2>
         <details><summary>Wann hat der Kiosk geöffnet?</summary><p>Montag bis Donnerstag 7:30 bis 22 Uhr, Freitag 7:30 bis 23 Uhr, Samstag 9 bis 23 Uhr, Sonntag 9 bis 22 Uhr.</p></details>
         <details><summary>Ist sonntags offen?</summary><p>Ja, sonntags von 9 bis 22 Uhr. Der Kiosk ist an allen sieben Tagen der Woche geöffnet.</p></details>
         <details><summary>Wo genau finde ich euch?</summary><p>Suitbertusstraße 2, 40223 Düsseldorf, im Stadtteil Bilk. Über den Button „Route planen“ startet die Navigation direkt in Google Maps.</p></details>
@@ -198,11 +170,11 @@
   <footer class="foot">
     <div class="wrap foot__in">
       <div>
-        <a class="brand brand--foot" href="#start"><img src="assets/mark.svg" alt="" width="44" height="44"><span>Erbil <b>Kiosk</b></span></a>
+        <a class="brand brand--foot" href="#start"><img src="assets/mark.svg" alt="" width="36" height="36"><span>Erbil Kiosk</span></a>
         <p>Suitbertusstraße 2<br>40223 Düsseldorf</p>
       </div>
       <div>
-        <p><b>Öffnungszeiten</b></p>
+        <p class="foot__h">Öffnungszeiten</p>
         <p>Mo–Do 7:30–22 Uhr<br>Fr 7:30–23 Uhr<br>Sa 9–23 Uhr<br>So 9–22 Uhr</p>
       </div>
       <nav aria-label="Rechtliches"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></nav>
@@ -211,6 +183,6 @@
     <p class="foot__note wrap">Entwurf von Nexuzo, Düsseldorf. Alle Angaben ohne Gewähr, bis der Inhaber sie bestätigt hat. Platzhalterfotos: Unsplash.</p>
   </footer>
 
-  <script src="script.js?v=40"></script>
+  <script src="script.js?v=41"></script>
 </body>
 </html>
